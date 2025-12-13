@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+env/
+ENV/
+env.bak/
+venv/
+ENV/
+env.bak/
+
+# Conda
+environment.yml  # Commit this for repro, but ignore generated env
+# .conda/  # If using conda envs
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+*.ipynb  # Optional: Ignore all notebooks if you want to commit .py exports only
+
+# Data (large/sensitive—commit structure, not contents)
+data/raw/*
+!data/raw/.gitkeep  # Optional: Keep empty placeholder
+data/processed/*.csv  # Ignore processed CSVs (large, repro from notebooks)
+data/processed/*.pkl  # Ignore PKLs if sensitive
+data/processed/*.shp*  # Ignore shapefiles (large)
+data/processed/*.png  # Ignore plots (commit to plots/ instead)
+!data/processed/model_comparison.csv  # Keep this summary CSV
+
+# Models (large PKLs)
+models/*.pkl
+!models/.gitkeep  # Optional placeholder
+
+# Plots (large images)
+plots/*.png
+!plots/.gitkeep
+
+# Logs/Outputs
+*.log
+logs/
+output/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/

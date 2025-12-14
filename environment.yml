@@ -17,6 +17,7 @@ dependencies:
   - folium=0.15.1
   - pip  # For Streamlit
   - pyarrow=15.0.2
+  - jupyter=7.5.0
   - pip:
     - streamlit==1.29.0
     - streamlit-folium==0.14.0  # Folium integration

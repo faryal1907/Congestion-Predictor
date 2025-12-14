@@ -16,6 +16,7 @@ dependencies:
   - openpyxl=3.1.2  # For XLSX
   - folium=0.15.1
   - pip  # For Streamlit
+  - pyarrow=15.0.2
   - pip:
     - streamlit==1.29.0
     - streamlit-folium==0.14.0  # Folium integration

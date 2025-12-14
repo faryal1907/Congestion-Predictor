@@ -104,8 +104,6 @@ if tab == "Home":
     st.title("Lahore Congestion Predictor PoC")
     st.markdown("""
     **Overview:** Predicts micro-scale congestion (0-10) on Lahore roads using XGBoost (MAE ~0.80).
-    **Inputs:** Incident count, precipitation, humidity, temperature, peak hour/weekday.
-    **Outputs:** Score + Folium map hotspot (radius scales with risk).
     
     **Use Cases:**
     - Police: Score >5 → hotspot alerts
